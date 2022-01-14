@@ -27,7 +27,6 @@
 module org.tquadrat.foundation.tools
 {
     requires java.base;
-    requires transitive org.tquadrat.foundation.base;
     requires org.tquadrat.foundation.util;
     requires org.tquadrat.foundation.value;
 
