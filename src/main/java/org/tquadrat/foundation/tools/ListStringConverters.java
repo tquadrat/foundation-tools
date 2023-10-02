@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2020 by Thomas Thrien.
+ *  Copyright © 2002-2023 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -33,12 +33,13 @@ import org.tquadrat.foundation.lang.StringConverter;
  *  instances from the service.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: ListStringConverters.java 820 2020-12-29 20:34:22Z tquadrat $
+ *  @version $Id: ListStringConverters.java 1073 2023-10-01 11:08:51Z tquadrat $
  *  @since 0.1.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: ListStringConverters.java 820 2020-12-29 20:34:22Z tquadrat $" )
+@SuppressWarnings( "UseOfSystemOutOrSystemErr" )
+@ClassVersion( sourceVersion = "$Id: ListStringConverters.java 1073 2023-10-01 11:08:51Z tquadrat $" )
 @API( status = EXPERIMENTAL, since = "0.1.0" )
 @PlaygroundClass
 public final class ListStringConverters
@@ -65,7 +66,7 @@ public final class ListStringConverters
         {
             StringConverter.list()
                 .stream()
-                .map( c -> c.getName() )
+                .map( Class::getName )
                 .sorted()
                 .forEach( out::println );
         }

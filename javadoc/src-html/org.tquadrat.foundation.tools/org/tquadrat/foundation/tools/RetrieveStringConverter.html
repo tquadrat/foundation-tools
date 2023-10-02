@@ -13,7 +13,7 @@
 <div class="source-container">
 <pre><span class="source-line-no">001</span><span id="line-1">/*</span>
 <span class="source-line-no">002</span><span id="line-2"> * ============================================================================</span>
-<span class="source-line-no">003</span><span id="line-3"> *  Copyright © 2002-2020 by Thomas Thrien.</span>
+<span class="source-line-no">003</span><span id="line-3"> *  Copyright © 2002-2023 by Thomas Thrien.</span>
 <span class="source-line-no">004</span><span id="line-4"> *  All Rights Reserved.</span>
 <span class="source-line-no">005</span><span id="line-5"> * ============================================================================</span>
 <span class="source-line-no">006</span><span id="line-6"> *  Licensed to the public under the agreements of the GNU Lesser General Public</span>
@@ -53,46 +53,47 @@
 <span class="source-line-no">040</span><span id="line-40"> *</span>
 <span class="source-line-no">041</span><span id="line-41"> *  @UMLGraph.link</span>
 <span class="source-line-no">042</span><span id="line-42"> */</span>
-<span class="source-line-no">043</span><span id="line-43">@ClassVersion( sourceVersion = "RetrieveStringConverter: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $" )</span>
-<span class="source-line-no">044</span><span id="line-44">@API( status = EXPERIMENTAL, since = "0.1.0" )</span>
-<span class="source-line-no">045</span><span id="line-45">@PlaygroundClass</span>
-<span class="source-line-no">046</span><span id="line-46">public final class RetrieveStringConverter</span>
-<span class="source-line-no">047</span><span id="line-47">{</span>
-<span class="source-line-no">048</span><span id="line-48">        /*--------------*\</span>
-<span class="source-line-no">049</span><span id="line-49">    ====** Constructors **=====================================================</span>
-<span class="source-line-no">050</span><span id="line-50">        \*--------------*/</span>
-<span class="source-line-no">051</span><span id="line-51">    /**</span>
-<span class="source-line-no">052</span><span id="line-52">     *  No instance allowed for this class.</span>
-<span class="source-line-no">053</span><span id="line-53">     */</span>
-<span class="source-line-no">054</span><span id="line-54">    private RetrieveStringConverter() { throw new PrivateConstructorForStaticClassCalledError( RetrieveStringConverter.class ); }</span>
-<span class="source-line-no">055</span><span id="line-55"></span>
-<span class="source-line-no">056</span><span id="line-56">        /*---------*\</span>
-<span class="source-line-no">057</span><span id="line-57">    ====** Methods **==========================================================</span>
-<span class="source-line-no">058</span><span id="line-58">        \*---------*/</span>
-<span class="source-line-no">059</span><span id="line-59">    /**</span>
-<span class="source-line-no">060</span><span id="line-60">     * The program entry point.</span>
-<span class="source-line-no">061</span><span id="line-61">     *</span>
-<span class="source-line-no">062</span><span id="line-62">     * @param args The command line arguments.</span>
-<span class="source-line-no">063</span><span id="line-63">     */</span>
-<span class="source-line-no">064</span><span id="line-64">    public static final void main( final String... args )</span>
-<span class="source-line-no">065</span><span id="line-65">    {</span>
-<span class="source-line-no">066</span><span id="line-66">        try</span>
-<span class="source-line-no">067</span><span id="line-67">        {</span>
-<span class="source-line-no">068</span><span id="line-68">            final var stringConverter = StringConverter.forClass( BigInteger.class );</span>
-<span class="source-line-no">069</span><span id="line-69">            stringConverter.ifPresentOrElse( $ -&gt; out.println( "Success!" ), () -&gt; out.println( "Failure!" ) );</span>
-<span class="source-line-no">070</span><span id="line-70">        }</span>
-<span class="source-line-no">071</span><span id="line-71">        catch( final Throwable t )</span>
-<span class="source-line-no">072</span><span id="line-72">        {</span>
-<span class="source-line-no">073</span><span id="line-73">            //---* Handle previously unhandled exceptions *------------------------</span>
-<span class="source-line-no">074</span><span id="line-74">            t.printStackTrace( err );</span>
-<span class="source-line-no">075</span><span id="line-75">        }</span>
-<span class="source-line-no">076</span><span id="line-76">    }  //  main()</span>
-<span class="source-line-no">077</span><span id="line-77">}</span>
-<span class="source-line-no">078</span><span id="line-78">//  class RetrieveStringConverter</span>
-<span class="source-line-no">079</span><span id="line-79"></span>
-<span class="source-line-no">080</span><span id="line-80">/*</span>
-<span class="source-line-no">081</span><span id="line-81"> *  End of File</span>
-<span class="source-line-no">082</span><span id="line-82"> */</span>
+<span class="source-line-no">043</span><span id="line-43">@SuppressWarnings( "UseOfSystemOutOrSystemErr" )</span>
+<span class="source-line-no">044</span><span id="line-44">@ClassVersion( sourceVersion = "RetrieveStringConverter: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $" )</span>
+<span class="source-line-no">045</span><span id="line-45">@API( status = EXPERIMENTAL, since = "0.1.0" )</span>
+<span class="source-line-no">046</span><span id="line-46">@PlaygroundClass</span>
+<span class="source-line-no">047</span><span id="line-47">public final class RetrieveStringConverter</span>
+<span class="source-line-no">048</span><span id="line-48">{</span>
+<span class="source-line-no">049</span><span id="line-49">        /*--------------*\</span>
+<span class="source-line-no">050</span><span id="line-50">    ====** Constructors **=====================================================</span>
+<span class="source-line-no">051</span><span id="line-51">        \*--------------*/</span>
+<span class="source-line-no">052</span><span id="line-52">    /**</span>
+<span class="source-line-no">053</span><span id="line-53">     *  No instance allowed for this class.</span>
+<span class="source-line-no">054</span><span id="line-54">     */</span>
+<span class="source-line-no">055</span><span id="line-55">    private RetrieveStringConverter() { throw new PrivateConstructorForStaticClassCalledError( RetrieveStringConverter.class ); }</span>
+<span class="source-line-no">056</span><span id="line-56"></span>
+<span class="source-line-no">057</span><span id="line-57">        /*---------*\</span>
+<span class="source-line-no">058</span><span id="line-58">    ====** Methods **==========================================================</span>
+<span class="source-line-no">059</span><span id="line-59">        \*---------*/</span>
+<span class="source-line-no">060</span><span id="line-60">    /**</span>
+<span class="source-line-no">061</span><span id="line-61">     * The program entry point.</span>
+<span class="source-line-no">062</span><span id="line-62">     *</span>
+<span class="source-line-no">063</span><span id="line-63">     * @param args The command line arguments.</span>
+<span class="source-line-no">064</span><span id="line-64">     */</span>
+<span class="source-line-no">065</span><span id="line-65">    public static final void main( final String... args )</span>
+<span class="source-line-no">066</span><span id="line-66">    {</span>
+<span class="source-line-no">067</span><span id="line-67">        try</span>
+<span class="source-line-no">068</span><span id="line-68">        {</span>
+<span class="source-line-no">069</span><span id="line-69">            final var stringConverter = StringConverter.forClass( BigInteger.class );</span>
+<span class="source-line-no">070</span><span id="line-70">            stringConverter.ifPresentOrElse( $ -&gt; out.println( "Success!" ), () -&gt; out.println( "Failure!" ) );</span>
+<span class="source-line-no">071</span><span id="line-71">        }</span>
+<span class="source-line-no">072</span><span id="line-72">        catch( final Throwable t )</span>
+<span class="source-line-no">073</span><span id="line-73">        {</span>
+<span class="source-line-no">074</span><span id="line-74">            //---* Handle previously unhandled exceptions *------------------------</span>
+<span class="source-line-no">075</span><span id="line-75">            t.printStackTrace( err );</span>
+<span class="source-line-no">076</span><span id="line-76">        }</span>
+<span class="source-line-no">077</span><span id="line-77">    }  //  main()</span>
+<span class="source-line-no">078</span><span id="line-78">}</span>
+<span class="source-line-no">079</span><span id="line-79">//  class RetrieveStringConverter</span>
+<span class="source-line-no">080</span><span id="line-80"></span>
+<span class="source-line-no">081</span><span id="line-81">/*</span>
+<span class="source-line-no">082</span><span id="line-82"> *  End of File</span>
+<span class="source-line-no">083</span><span id="line-83"> */</span>
 
 
 

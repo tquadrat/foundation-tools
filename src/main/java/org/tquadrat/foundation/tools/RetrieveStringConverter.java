@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2020 by Thomas Thrien.
+ *  Copyright © 2002-2023 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -40,6 +40,7 @@ import org.tquadrat.foundation.lang.StringConverter;
  *
  *  @UMLGraph.link
  */
+@SuppressWarnings( "UseOfSystemOutOrSystemErr" )
 @ClassVersion( sourceVersion = "RetrieveStringConverter: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $" )
 @API( status = EXPERIMENTAL, since = "0.1.0" )
 @PlaygroundClass
