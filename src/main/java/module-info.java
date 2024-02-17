@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Copyright © 2002-2020 by Thomas Thrien.
+ * Copyright © 2002-2024 by Thomas Thrien.
  * All Rights Reserved.
  * ============================================================================
  *
@@ -17,20 +17,18 @@
  */
 
 /**
- *  The module for the some tools related to the Foundation Library.
+ *  The module for some tools related to the Foundation Library.
  *
  *  @version $Id: module-info.java 990 2022-01-14 23:34:24Z tquadrat $
  *
  *  @todo task.list
  */
-@SuppressWarnings( "rawtypes" )
 module org.tquadrat.foundation.tools
 {
     requires java.base;
     requires org.tquadrat.foundation.util;
     requires org.tquadrat.foundation.value;
-
-    //---* Common Use *--------------------------------------------------------
+    requires org.tquadrat.foundation.xml;
 }
 
 /*
