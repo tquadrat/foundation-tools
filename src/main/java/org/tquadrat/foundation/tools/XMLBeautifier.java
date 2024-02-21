@@ -60,13 +60,13 @@ import org.xml.sax.helpers.DefaultHandler;
  *  Beautifies XML code.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $
+ *  @version $Id: XMLBeautifier.java 1101 2024-02-18 00:18:48Z tquadrat $
  *  @since 0.4.2
  *
  *  @UMLGraph.link
  */
 @SuppressWarnings( "UseOfSystemOutOrSystemErr" )
-@ClassVersion( sourceVersion = "$Id: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: XMLBeautifier.java 1101 2024-02-18 00:18:48Z tquadrat $" )
 @API( status = STABLE, since = "0.4.2" )
 @ProgramClass
 public final class XMLBeautifier
@@ -82,13 +82,13 @@ public final class XMLBeautifier
      *  for the output.
      *
      *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
-     *  @version $Id: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $
+     *  @version $Id: XMLBeautifier.java 1101 2024-02-18 00:18:48Z tquadrat $
      *  @since 0.4.2
      *
      *  @UMLGraph.link
      */
     @SuppressWarnings( "UseOfSystemOutOrSystemErr" )
-    @ClassVersion( sourceVersion = "$Id: HexUtils.java 747 2020-12-01 12:40:38Z tquadrat $" )
+    @ClassVersion( sourceVersion = "$Id: XMLBeautifier.java 1101 2024-02-18 00:18:48Z tquadrat $" )
     @API( status = STABLE, since = "0.4.2" )
     private static final class XMLHandler extends DefaultHandler
     {

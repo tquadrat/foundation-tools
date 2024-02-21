@@ -19,7 +19,7 @@
 /**
  *  The module for some tools related to the Foundation Library.
  *
- *  @version $Id: module-info.java 990 2022-01-14 23:34:24Z tquadrat $
+ *  @version $Id: module-info.java 1101 2024-02-18 00:18:48Z tquadrat $
  *
  *  @todo task.list
  */
