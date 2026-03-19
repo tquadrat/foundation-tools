@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2023 by Thomas Thrien.
+ *  Copyright © 2002-2025 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -33,13 +33,13 @@ import org.tquadrat.foundation.lang.StringConverter;
  *  instances from the service.
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: ListStringConverters.java 1073 2023-10-01 11:08:51Z tquadrat $
+ *  @version $Id: ListStringConverters.java 1151 2025-10-01 21:32:15Z tquadrat $
  *  @since 0.1.0
  *
  *  @UMLGraph.link
  */
 @SuppressWarnings( "UseOfSystemOutOrSystemErr" )
-@ClassVersion( sourceVersion = "$Id: ListStringConverters.java 1073 2023-10-01 11:08:51Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: ListStringConverters.java 1151 2025-10-01 21:32:15Z tquadrat $" )
 @API( status = EXPERIMENTAL, since = "0.1.0" )
 @PlaygroundClass
 public final class ListStringConverters
@@ -60,7 +60,7 @@ public final class ListStringConverters
      *
      * @param args The command line arguments.
      */
-    public static final void main( final String... args )
+    public static final void main( @SuppressWarnings( "unused" ) final String... args )
     {
         try
         {

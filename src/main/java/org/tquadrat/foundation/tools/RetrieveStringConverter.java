@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- *  Copyright © 2002-2023 by Thomas Thrien.
+ *  Copyright © 2002-2025 by Thomas Thrien.
  *  All Rights Reserved.
  * ============================================================================
  *  Licensed to the public under the agreements of the GNU Lesser General Public
@@ -58,16 +58,16 @@ public final class RetrieveStringConverter
     ====** Methods **==========================================================
         \*---------*/
     /**
-     * The program entry point.
+     *  The program entry point.
      *
-     * @param args The command line arguments.
+     *  @param  args    The command line arguments.
      */
-    public static final void main( final String... args )
+    public static final void main( @SuppressWarnings( "unused" ) final String... args )
     {
         try
         {
             final var stringConverter = StringConverter.forClass( BigInteger.class );
-            stringConverter.ifPresentOrElse( $ -> out.println( "Success!" ), () -> out.println( "Failure!" ) );
+            stringConverter.ifPresentOrElse( _ -> out.println( "Success!" ), () -> out.println( "Failure!" ) );
         }
         catch( final Throwable t )
         {

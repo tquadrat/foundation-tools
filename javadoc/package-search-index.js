@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.tquadrat.foundation.tools","l":"org.tquadrat.foundation.tools"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"m":"org.tquadrat.foundation.tools","l":"org.tquadrat.foundation.tools"}];updateSearchResults();
