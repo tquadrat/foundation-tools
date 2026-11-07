@@ -4,7 +4,7 @@
 
 - [Javadoc Reference](https://htmlpreview.github.io/?https://github.com/tquadrat/foundation-tools/blob/master/javadoc/index.html)
 
-The current version of this component is 0.25.14.
+The current version of this component is 0.25.15.
 
 ---  
-Last updated: 2026-10-18T13:01:04.992550522+02:00[Europe/Berlin]
+Last updated: 2026-11-07T17:57:50.129398293+01:00[Europe/Berlin]
