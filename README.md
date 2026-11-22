@@ -7,4 +7,4 @@
 The current version of this component is 0.25.15.
 
 ---  
-Last updated: 2026-11-22T12:09:02.974420112+01:00[Europe/Berlin]
+Last updated: 2026-11-22T12:22:03.529775092+01:00[Europe/Berlin]
